@@ -6,7 +6,7 @@ const movieSchema = require('./schema/schema')
 const resolvers = require('./resolver/resolver')
 const cors = require('cors')
 
-mongoose.connect('mongodb+srv://root:root@cluster0.2eqtk.mongodb.net/DIGITADDICTAPI?retryWrites=true&w=majority', {
+mongoose.connect(process.env.MONGODB_URI ||'mongodb+srv://root:root@cluster0.2eqtk.mongodb.net/DIGITADDICTAPI?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useCreateIndex:true,
   useUnifiedTopology: true
