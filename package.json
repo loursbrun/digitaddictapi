@@ -1,14 +1,18 @@
 {
   "name": "digitaddict",
   "version": "1.0.0",
-  "description": "",
+  "description": "digitaddict api",
+  "engines": {
+    "node": "14.x"
+  },
   "main": "app.js",
   "scripts": {
-    "dev": "env-cmd -f ./config/dev.env node app.js"
+    "dev": "env-cmd -f ./config/dev.env node app.js",
+    "start": "node app.js",
+    "test": "node app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Fabien Brun",
+  "license": "digitaddict",
   "dependencies": {
     "cors": "^2.8.5",
     "env-cmd": "^10.1.0",
@@ -17,5 +21,14 @@
     "graphql": "^15.3.0",
     "lodash": "^4.17.17",
     "mongoose": "^5.9.22"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loursbrun/digitaddictapi"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ]
 }
