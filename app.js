@@ -28,6 +28,6 @@ app.get('/', (req, res) => {
   res.send('Hello from backend app.js')
 })
 
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log('Server on port 4000')
 })
